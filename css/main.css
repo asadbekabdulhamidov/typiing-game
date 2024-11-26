@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(49deg, #fd90bd, #288fe0);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 30px;
+  margin: 0 auto;
+  height: calc(90%);
+  border: 2px solid rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+select {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  width: 150px;
+  position: absolute;
+  left: 45%;
+  top: 25%;
+  padding: 10px 15px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .random-text {
+  margin-bottom: 15px;
+  user-select: none;
+}
+.input {
+  border: none;
+  outline: none;
+  font-size: 22px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  width: 400px;
+}
+.time {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+.modal {
+  width: 300px;
+  background: linear-gradient(210deg, #6c5d98, #235e75);
+  border: 2px solid blue;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  z-index: 9999;
+}
+.modal h3 {
+  padding: 10px 40px;
+  border: 1px solid red;
+  border-radius: 20px;
+  cursor: pointer;
+  background: linear-gradient(153deg, #214ef0, #e8b0cf);
+}
+
+.modal h2 {
+  display: flex;
+  padding: 10px 40px;
+  border: 1px solid red;
+  border-radius: 20px;
+  cursor: pointer;
+  background: linear-gradient(153deg, #214ef0, #e8b0cf);
+}
+.modal a {
+  padding: 10px 40px;
+  border: 1px solid red;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  background: linear-gradient(153deg, #214ef0, #e8b0cf);
+}
+
+.hidden {
+  display: none;
+}
+
+.success {
+  border: 5px solid greenyellow;
+  box-shadow: 3px 4px 29px 3px rgba(0, 255, 8, 0.71);
+  -webkit-box-shadow: 3px 4px 29px 3px rgba(0, 255, 8, 0.71);
+  -moz-box-shadow: 3px 4px 29px 3px rgba(0, 255, 8, 0.71);
+}
+
+.error {
+  border: 5px solid tomato;
+  box-shadow: 3px 4px 29px 3px rgba(255, 0, 0, 0.71);
+  -webkit-box-shadow: 3px 4px 29px 3px rgba(255, 0, 0, 0.71);
+  -moz-box-shadow: 3px 4px 29px 3px rgba(255, 0, 0, 0.71);
+}
